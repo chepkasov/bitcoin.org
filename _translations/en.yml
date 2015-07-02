@@ -22,6 +22,7 @@ en:
     translation: "Translation"
     inactive_contributors: "Inactive Contributors"
     github: "Contributors on GitHub"
+    not_affiliated: "(Not affiliated with Bitcoin.com)"
   bitcoin-for-businesses:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"

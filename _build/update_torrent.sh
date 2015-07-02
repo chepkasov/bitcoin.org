@@ -7,7 +7,7 @@ SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
 BINDIR='/var/www/bin'
-DATADIR='/bitcoin.org/torrent'
+DATADIR='/bitcoin.com/torrent'
 PREFIX='bitcoin-core-'
 
 # Stop script in case a single command fails
@@ -110,7 +110,7 @@ tmpdir=`mktemp -d`
 rsync -rt -f '- /*/' --delete "$BINDIR/$PREFIX$version/" "$tmpdir/$PREFIX$version/"
 
 # Build new torrent file.
-buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.publicbt.com:80/announce,udp://tracker.ccc.de:80/announce,udp://tracker.coppersurfer.tk:6969,udp://open.demonii.com:1337" -w "https://bitcoin.org/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
+buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.publicbt.com:80/announce,udp://tracker.ccc.de:80/announce,udp://tracker.coppersurfer.tk:6969,udp://open.demonii.com:1337" -w "https://bitcoin.com/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
 
 # Update last combined hash and version.
 echo $currenthash > $DATADIR/lasthash

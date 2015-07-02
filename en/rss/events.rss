@@ -7,12 +7,12 @@
 <!-- Note: this file is built non-deterministically -->
 <channel>
 	<title>Bitcoin conferences and events</title>
-	<link>https://bitcoin.org/en/events</link>
+	<link>https://bitcoin.com/en/events</link>
 	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
 	<image>
 		<title>Bitcoin conferences and events</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
-		<link>https://bitcoin.org/en/events</link>
+		<url>https://bitcoin.com/img/icons/logo_rss.png</url>
+		<link>https://bitcoin.com/en/events</link>
 	</image>
 	{% filter_for p in site.conferences sort_by:date %}
         <item>

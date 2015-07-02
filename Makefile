@@ -216,7 +216,7 @@ manual-check-diff-sha256sums:
 ## see if any files were built differently upstream from what we have
 ## locally
 	$S echo "Files listed below (if any) have different hashes"
-	$S curl -s -o- https://bitcoin.org/sha256sums.txt \
+	$S curl -s -o- https://bitcoin.com/sha256sums.txt \
 	  | sort - _site/sha256sums.txt \
 	  | uniq -u \
 	  | sort -k2
@@ -228,7 +228,7 @@ check-for-broken-bitcoin-core-download-links:
 	  | sed 's/.*href="//; s/".*//' \
 	  | while read url ; do \
 	    if [ "$${url##http*}" ]; then \
-	      curl -sI "https://bitcoin.org$$url" ; \
+	      curl -sI "https://bitcoin.com$$url" ; \
 	    else \
 	      curl -sI "$$url" ; \
 	    fi | grep -q '200 OK' || echo "Error: Could not retrieve $$url" ; \

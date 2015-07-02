@@ -11,7 +11,7 @@ source /etc/profile.d/rvm.sh
 LANGS=('ar' 'bg' 'bn' 'ca' 'cs' 'da' 'de' 'el' 'es' 'fa' 'fr' 'hi' 'hr' 'hu' 'id' 'it' 'ja' 'ko' 'lv' 'ml' 'nl' 'no' 'pl' 'pt_BR' 'ro' 'ru' 'sl' 'sr' 'sv' 'tr' 'uk' 'zh_CN' 'zh_TW')
 WORKDIR=`mktemp -d`
 LIVEDIR=`mktemp -d`
-SITEDIR='/bitcoin.org/txpreview'
+SITEDIR='/bitcoin.com/txpreview'
 DESTDIR='/var/www/txpreview'
 
 # Stop script in case a single command fails

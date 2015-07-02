@@ -6,18 +6,18 @@
 <rss version="2.0">
 <channel>
 	<title>Bitcoin Core releases</title>
-	<link>https://bitcoin.org/en/version-history</link>
+	<link>https://bitcoin.com/en/version-history</link>
 	<description>This RSS feed allows to follow Bitcoin Core new releases.</description>
 	<image>
 		<title>Bitcoin Core releases</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
-		<link>https://bitcoin.org/en/version-history</link>
+		<url>https://bitcoin.com/img/icons/logo_rss.png</url>
+		<link>https://bitcoin.com/en/version-history</link>
 	</image>
 	{% filter_for p in site.pages reversed sort_by:versionint category:release %}
         <item>
             <title>{{ p.title | htmlescape }}</title>
-            <link>https://bitcoin.org{{ p.url | replace:'.html','' }}</link>
-            <guid>https://bitcoin.org{{ p.url | replace:'.html','' }}</guid>
+            <link>https://bitcoin.com{{ p.url | replace:'.html','' }}</link>
+            <guid>https://bitcoin.com{{ p.url | replace:'.html','' }}</guid>
           {% if p.optional_date %}
             <pubDate>{{ p.optional_date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
           {% else %}
