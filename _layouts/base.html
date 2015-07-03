@@ -66,13 +66,13 @@
         <ul>
           <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
 		  <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
-          <li{% if page.id == 'choose-your-wallet' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate menu-choose-wallet layout %}</a></li>
-          <li{% if page.id == 'buy-bitcoins' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate buy-bitcoins url %}">{% translate menu-buy-bitcoins layout %}</a></li>
           <li{% if page.id == 'mine-bitcoins' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate mine-bitcoins url %}">{% translate menu-mine-bitcoins layout %}</a></li>
+          <li{% if page.id == 'faq' %} class="active"{% endif %} style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
         </ul>
       </li>
       <li{% if page.id == 'bitcoin-news' %} class="active"{% endif %} style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"><a href="/{{ page.lang }}/bitcoin-news">{% translate menu-news layout %}</a></li>
-      <li{% if page.id == 'faq' %} class="active"{% endif %} style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
+          <li{% if page.id == 'choose-your-wallet' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Bitcoin Wallets</a></li>
+          <li{% if page.id == 'buy-bitcoins' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate buy-bitcoins url %}">Buy Bitcoin</a></li>
     </ul>
   </div></div>
   <div class="body">
