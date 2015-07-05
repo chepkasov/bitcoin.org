@@ -443,12 +443,12 @@ opacity: 0;
 
 #searchbox {
 	position: absolute;
-	right: 80px;
-	top: 12px;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
+	right: 350px;
+  	top: 50px;
+  	border-left: 2px solid rgba(216, 216, 216, 1);
+  	border-right: 2px solid rgba(216, 216, 216, 1);
+  	border-top: 2px solid rgba(216, 216, 216, 1);
+  	border-bottom: 2px solid rgba(216, 216, 216, 1);
 	width: 128px;
 	background-image: url('/img/icons/ico_search.png');
 	background-repeat: no-repeat;

@@ -45,7 +45,7 @@ $(document).ready(function(){
 		.append('<input type="text" placeholder="Search" id="searchbox" name="q">')
 		.append('<input type="submit" style="display: none;">');
 	
-	$('.head ul.lang').before(searchForm);
+	$('div.topmenu div.center nav').before(searchForm);
 	
 	var attempts = 0;
 	

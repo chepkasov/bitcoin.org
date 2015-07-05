@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 	$('#show-more').hide();
 	divBodyHeight = $('div.body').height();
-	$('div.body').css('overflow-y', 'auto');
+	// $('div.body').css('overflow-y', 'auto');
 		
 	$.ajax({
 	    url: "/api/frontend/buyBitcoins",
@@ -95,9 +95,9 @@ $(document).on("click", "#show-more", function(event) {
     $('#show-more').hide(200);
     var realHeight = $('div.body').height();
     $('#exchange-listing-container').children('.exchange-listing').each(function () {
-        if ($(this).width() > 275 && $('#exchange-listing-container').width() > 626)
+        if ($(this).width() > 272 && $('#exchange-listing-container').width() > 626)
         {
-        	$(this).animate({ width: "275px", marginLeft: "8px"}, 500, function() {
+        	$(this).animate({ width: "272px", marginLeft: "8px"}, 500, function() {
         		var maxHeight = 0;
         		$('#exchange-listing-container').children('.exchange-listing').each(function () {
         	    	if ($(this).height() > maxHeight)

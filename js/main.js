@@ -622,7 +622,7 @@ if ($(t).children('div').offset())
 }
 if (checkOffset != $(t).find('a span').offset().top)
 {
-	var topPos = 77 - $(t).find('a span').offset().top;
+	var topPos = 184 - $(t).find('a span').offset().top;
 	$(t).children('div').css('top', topPos);
 	$(t).children('span').css('top', topPos);
 }

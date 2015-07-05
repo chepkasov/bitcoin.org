@@ -5,6 +5,7 @@ $(document).ready(function(){
 	qrClicked = false;
 	
 	var selectedWallet = window.location.hash.substr(1);
+	var loadedAddresses = [];
 
 	$.ajax({
               url: "/api/frontend/chooseYourWalletDonation",
@@ -47,6 +48,8 @@ $(document).ready(function(){
 			  					$(wallet).find('#bitcoin-be-url').attr('href', 'https://blockchain.info/address/' + item.btcaddr);
 			  					$(wallet).find('.qrcodeshow').data('address', item.btcaddr)
 			  					$(wallet).find('.qrcodeshow').data('qrid', item.id)
+			  					
+			  					loadedAddresses[loadedAddresses.length] = item.btcaddr;
 			  					
 			  					var platforms = 'Available for ';
 			  					var platformItems = 0;
@@ -104,6 +107,8 @@ $(document).ready(function(){
                     		
                     		$("html, body").animate({ scrollTop: $(walletId).offset().top - 100 }, 1000);                    		
                     	}
+                    	
+                    	getBtcBalance(loadedAddresses);
                     }
 	});
 });
@@ -136,3 +141,38 @@ $('div').on('click', '.qrcodeshow', function(event){
 		}, 500);
 	}
 });
+
+function getBtcBalance(addressList) {
+	
+	var addressQuery = '';
+	
+	for (var i=0; i<addressList.length; i++)
+	{
+		if (i == 0) {
+			addressQuery += addressList[i];
+		} else {
+			addressQuery += '|' + addressList[i];
+		}
+	}
+	
+	$.ajax({
+        url: "https://blockchain.info/multiaddr?active=" + addressQuery,
+        type: "GET",
+        cache: false,
+        data: { },
+        statusCode: {
+                200: function (response) {
+              	  	console.log(response);
+              	  	
+              	  	response.addresses;
+                },
+                500: function (response) {
+
+                }
+              },
+              complete: function(e, xhr, settings){
+              	
+        }
+});
+	
+}
