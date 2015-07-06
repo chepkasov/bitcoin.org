@@ -99,6 +99,9 @@
 {% if page.id != 'index' %}
  style="  /* width: 930px; */ margin-left: auto;  margin-right: auto;"
 {% endif %}
+{% if page.id == 'index' %}
+ style="width: auto"
+{% endif %}
 >
     {{ content }}
 </div>
