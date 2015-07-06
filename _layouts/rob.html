@@ -15,6 +15,9 @@
 <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="/css/pure-min.css">
 <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/grids-responsive-min.css">
+<!--<![endif]-->
 
 
 <script type="text/javascript" src="/js/base.js"></script>
@@ -40,343 +43,8 @@
 
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<link rel="stylesheet" href="/css/front.css" type="text/css" media="screen" />
 
-
-<style>
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-  /* Set your content font stack here: */
-  font-family: 'Ubuntu', sans-serif;
-}
-
-a {
-
-}
-
-body {
-  background-color: white;
-}
-
-.topmenu {
-  margin:0px;
-  padding:0px;
-  background-color:#444;
-
-}
-
-.center {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.border {
-  border: 1px solid black;
-}
-
-.menuitem {
-  color:#9c9c9c;
-  font-weight:400;
-  font-size:1.1em;
-}
-
-.separator {
-  color:#d5d5d5;
-  font-weight:100;
-  font-size:1em;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  color: #d5d5d5; /* old IE */
-  background-color: #d5d5d5; /* Modern Browsers */
-  padding: 0px;
-  margin:0px;
-  width:100%;
-}
-
-.centergrid {
-  background-image: url('/img/bg.jpg');
-  background-size: cover;
-  min-height:420px;
-}
-
-.fa-check {
-  color: #39b54a;
-}
-
-.checklist {
-  font-size:1.1em;
-  letter-spacing:-0.06em;
-  line-height:1.2em;
-  font-weight:500;
-  color: #3e3e3e;
-  padding-top: 65px;
-  padding-left:45px;
-}
-
-.calltoaction {
-  margin-top:70px;
-  max-width:400px;
-}
-
-.slogan {
-  font-size: 31px;
-  font-weight:600;
-  color:#333;
-  text-align:right;
-  letter-spacing:-0.06em;
-}
-
-.videobutton {
-  color: #ed8a13 !important;
-  background-color:white;
-  font-weight:500;
-  border-radius: 5px;
-  border:1px solid silver;
-  padding:0.2em 0.5em;
-  text-transform: uppercase;
-  margin-top:10px;
-  margin-right:50px;
-  margin-left:120px;
-}
-
-.getstartedbutton {
-  color:white !important;
-  background-color: #39b54a;
-  font-weight:500;
-  border-radius: 5px;
-  border:0px;
-  padding:0.2em 0.6em;
-  text-transform: uppercase;
-  float:right;
-  margin-top:20px;
-  font-size:1.2em;
-  letter-spacing:-0.05em;
-}
-
-.learnmorebutton {
-  color:white !important;
-  background-color: #e75935;
-  font-weight:500;
-  border-radius: 5px;
-  border:0px;
-  padding:0.2em 0.6em;
-  text-transform: uppercase;
-  float:right;
-  margin-right:10px;
-  margin-top:20px;
-  font-size:1.2em;
-  letter-spacing:-0.05em;
-}
-
-.segment {
-  background-color: #f7931a;
-  min-height:120px;
-  color:white;
-  padding-top:20px;
-  padding-bottom:10px;
-}
-.segment a {
-  text-decoration: none;
-  color:white;
-}
-
-.segment a:visited {
-  color:white;
-}
-
-.segment a:hover {
-  color:white;
-}
-
-.segment-buyer {
-  text-align:right;
-  font-size:1.2em;
-  letter-spacing:-0.02em;
-  font-weight:100;
-  max-width:500px;
-}
-
-.segment-seller {
-  font-size:1.2em;
-  letter-spacing:-0.02em;
-  font-weight:100;
-  max-width:500px;
-}
-
-.segment-title {
-  font-size:2em;
-  text-transform:uppercase;
-  letter-spacing:-0.05em;
-  font-weight:500;
-}
-
-.bigarrow {
-  font-size:150px;
-  margin-top:-25px;
-  padding:0px;
-}
-
-.footer {
-  margin-top:20px;
-  font-size:0.9em;
-  color:#666;
-}
-
-.footer a {
-  font-size:0.9em;
-  color:#666;
-  text-decoration:none;
-}
-
-.footer a:hover {
-  font-size:0.9em;
-  color:#666;
-  text-decoration:underline;
-}
-
-
-/*Effects*/
-
-@-webkit-keyframes pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
-@keyframes pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  75% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
-.pulse {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.pulse:hover {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-
-/* Nav*/
-
-nav {
-	margin: 0px 0;
-	background-color: #444;
-  text-align:center;
-}
-
-nav ul {
-	padding:0;
-	margin:0;
-	list-style: none;
-	position: relative;
-	}
-
-nav ul li {
-	display:inline-block;
-	background-color: #444;
-	}
-
-nav a {
-	display:block;
-	padding:0 10px;
-	color:#FFF;
-	font-size:16px;
-	line-height: 35px;
-	text-decoration:none;
-}
-
-nav a:hover {
-	/* background-color: #000000; */
-}
-
-/* Hide Dropdowns by Default */
-nav ul ul {
-	display: none;
-	position: absolute;
-	top: 35px;
-}
-
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
-}
-
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	*/
-nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	left:170px;
-}
-
-nav a:visited,
-nav a:active,
-nav a:link {
-	color: #FFFFFF;
-}
-
-nav a:visited:hover,
-nav a:active:hover,
-nav a:link:hover {
-	color: #C7C7C7;
-}
-
-
-/* Change this in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
-
-/* End Nav */
-
-
-/*Logo*/
-.logoimage {
-  position:absolute;
-  top:20px;
-  left:20px;
-  z-index: 500;
-}
-
-.topadvertising {
-  height:80px;
-}
-</style>
 
 </head>
 
@@ -384,7 +52,9 @@ li > a:only-child:after { content: ''; }
 
 <div class="pure-g topadvertising">
   <div class="pure-u-6-24">
-    <img src="/img/logo.png" class="logoimage">
+  	<a href="/en/">
+    	<img src="/img/logo.png" class="logoimage">
+    </a>
   </div>
   <div class="pure-u-17-24">
   <!-- Ads Go Here -->
@@ -392,15 +62,12 @@ li > a:only-child:after { content: ''; }
 </div>
 
 <div class="pure-g topmenu">
-  <div class="pure-u-6-24">
-  </div>
-  <div class="pure-u-18-24 center">
-
+  <div class="pure-u-1 right">
     <!-- nav -->
     <nav>
         <ul>
-            <li><a href="#">Getting Started</a>
-            <ul style="background-color: #444; z-index: 500; left: -10px; top: 45px;">
+            <li><a href="/en/getting-started">Getting Started</a>
+            <ul>
                 <li><a href="/en/how-it-works">How it Works</a></li>
                 <li><a href="/en/you-need-to-know">You Need to Know</a></li>
                 <li><a href="/en/mine-bitcoins">Mine Bitcoins</a>
@@ -430,7 +97,7 @@ li > a:only-child:after { content: ''; }
 
 <div id="content" class="content"
 {% if page.id != 'index' %}
- style="  width: 930px; margin-left: auto;  margin-right: auto;"
+ style="  /* width: 930px; */ margin-left: auto;  margin-right: auto;"
 {% endif %}
 >
     {{ content }}
