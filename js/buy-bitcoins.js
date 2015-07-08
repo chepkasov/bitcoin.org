@@ -2,6 +2,16 @@ var divBodyHeight;
 
 $(document).ready(function(){
 	
+	$( "body" ).on( "click", "div.exchange-listing", function() {
+		
+		var href = $( this ).find('a').attr('href');
+		
+		if (href.indexOf('/url') == 0)
+		{
+			window.location = href;
+		}
+	});
+	
 	$('#show-more').hide();
 	divBodyHeight = $('div.body').height();
 	// $('div.body').css('overflow-y', 'auto');
@@ -487,3 +497,4 @@ function listExchanges(countryCode) {
 	          }
 	});
 }
+
