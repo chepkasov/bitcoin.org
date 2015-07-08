@@ -8,7 +8,7 @@ $(document).ready(function(){
 		
 		if (href.indexOf('/url') == 0)
 		{
-			window.location = href;
+		    window.open(href,'_blank');
 		}
 	});
 	
