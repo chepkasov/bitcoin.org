@@ -306,6 +306,9 @@ nav ul ul li {
 	nav ul ul li {
 		left:-170px;
 	}
+	nav ul {
+		  margin-right: 17%;
+	}
 }
 
 /* Second, Third and more Tiers	*/
