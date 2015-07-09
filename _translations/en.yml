@@ -818,7 +818,7 @@ en:
     multi-select-placeholder: "Search for an exchange..."
     multi-select-instructions: "e.g., search by country, city, exchange, or keyword"
     location-title: "Select a Location:"
-    featured-exchanges: "Featured Exchanges for @"
+    featured-exchanges: "Buy bitcoins in @ at:"
     regionNA: "North America"
     regionCR: "Caribbean"
     regionEU: "Europe"
