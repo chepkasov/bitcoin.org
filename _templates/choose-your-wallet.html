@@ -1082,6 +1082,7 @@ wallets:
 {% endfor %}{% endfor %}
 </div>
 <div class="show-more-container"><a href="#" onclick="return false;" class="show-more sponsored" style="display: none;">Click to see more</a></div>
+<div class="show-more-container"><a href="bump-wallet" id="bump" class="show-more" style="display: none;">Support your favourite wallet</a></div>
 </div>
 
 <div class="wallets walletsswitch" id="walletsswitch">
@@ -1092,7 +1093,6 @@ wallets:
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
     <div>{% if platform[1].link contains 'play.google.com' or platform[1].link contains 'itunes.apple.com' or platform[1].link contains 'chrome.google.com' %}<a href="{{ platform[1].link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% endif %}{% if platform[1].source %}<a href="{{ platform[1].source }}">{% translate walletsourcecode %}</a>{% endif %}
-    <a href="bump-wallet#{{ wallet[0] }}" style="border: 1px solid #255f96;">Bump</a>
     </div>
     <div>
       {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
