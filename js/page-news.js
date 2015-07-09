@@ -127,6 +127,10 @@ function listNewsItems(pageToken) {
 		            				{
 		            					$('.news-secondary .secondary-story').eq(secondaryHeadlineLocations[j]).find('.headline').remove();
 		            					$('.news-secondary .secondary-story').eq(secondaryHeadlineLocations[j]).find('.figcaptionsmall').html(response.items[i].title);
+		            					var figCaptionHeight = $('.news-secondary .secondary-story').eq(secondaryHeadlineLocations[j]).find('.figcaptionsmall').height();
+		            					figCaptionHeight = 200 - figCaptionHeight - 10; 
+		            					$('.news-secondary .secondary-story').eq(secondaryHeadlineLocations[j]).find('.figcaptionsmall').css('margin-top', figCaptionHeight + 'px');
+		            					
 		            					var imgUrl = response.items[i].images[0].url;
 		            					imgUrl = imgUrl.replace(/^http:\/\//i, 'https://');
 		            					
