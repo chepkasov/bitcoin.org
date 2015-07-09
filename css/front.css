@@ -615,6 +615,7 @@ li > a:only-child:after { content: ''; }
     background-color:#444;
     letter-spacing:normal;
   }
+  
 
   .topadvertising {
     height:160px;
@@ -737,6 +738,10 @@ li > a:only-child:after { content: ''; }
   nav {
     text-align:left;
   }
+  
+  nav ul {
+  	  margin-top: 50px;
+  }
 
   nav a {
   	display:block;
@@ -756,7 +761,7 @@ li > a:only-child:after { content: ''; }
   nav ul ul {
   	display: none;
   	position: absolute;
-  	top: 35px;
+  	top: 90px;
   }
 
   /* Display Dropdowns on Hover */
