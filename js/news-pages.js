@@ -65,16 +65,8 @@ $(document).ready(function(){
 		
 		if (attempts > 15)
 		{
-			console.log('Suspecting adblocker. Defaulting to Kraken');
 			adblock = true;
-			// /api/tickercontent
 			getTickerFromBackend()
-			/*
-			featuredExchange = 'kraken';
-			getTicker();
-      	    setInterval(function(){ getTicker(); }, 60000);
-      	    clearInterval(checkTickerAd);
-      	    */
 			clearInterval(checkTickerAd);
 		}
 	}, 500);
@@ -168,11 +160,6 @@ function getTicker() {
             		{
             			exchangeUrl = "https://anxbtc.com";
             		}
-            		
-            		if (adblock) {
-            			// $('div.news-header-ad-unit-300x100').html('Bitcoin price by: <br />' + featuredExchange + '<br />(This looks better without adblock)')
-            		}
-            		// $('div.news-header-ad-unit-300x100 a').attr('href', '/url?promo=' + featuredExchange +'&url=' + exchangeUrl)
 	            },
 	            500: function (response) {
 	            	console.log(response);
