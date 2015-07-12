@@ -82,7 +82,7 @@ $(document).ready(function(){
 	            	
 	            	var graphData = [];
 	            	
-	            	for (var i=0; i<response.data.length; i++)
+	            	for (var i=response.data.length-1; i>=0; i--)
 	            	{
 	            		graphData[graphData.length] = response.data[i][1];
 	            	}
