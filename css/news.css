@@ -443,18 +443,24 @@ opacity: 0;
 
 #searchbox {
 	position: absolute;
-	right: 350px;
-  	top: 50px;
-  	border-left: 2px solid rgba(216, 216, 216, 1);
-  	border-right: 2px solid rgba(216, 216, 216, 1);
-  	border-top: 2px solid rgba(216, 216, 216, 1);
-  	border-bottom: 2px solid rgba(216, 216, 216, 1);
+	right: 50%;
+  	top: 20px;
+  	border-left: 2px solid #575757;
+  	border-right: 2px solid #575757;
+  	border-top: 2px solid #575757;
+  	border-bottom: 2px solid #575757;
 	width: 128px;
 	background-image: url('/img/icons/ico_search.png');
 	background-repeat: no-repeat;
 	background-size: 20px;
 	padding-left: 22px;
-	color: #b8b8b8;
+	background-color: #575757;
+}
+
+@media screen and (max-width:768px) {
+	#searchbox {
+		top: 60px;
+	}
 }
 
 #author {

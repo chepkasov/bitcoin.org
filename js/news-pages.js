@@ -45,7 +45,7 @@ $(document).ready(function(){
 		.append('<input type="text" placeholder="Search" id="searchbox" name="q">')
 		.append('<input type="submit" style="display: none;">');
 	
-	$('div.topmenu div.center nav').before(searchForm);
+	$('div.pure-u-8-24.right nav').before(searchForm);
 	
 	var attempts = 0;
 	
@@ -130,7 +130,7 @@ function getTicker() {
 	            		$('.news-header-bitcoin-price span.daily-high').html('HI: ' + high.formatMoney(0, '.', ',') + '円');
 	            		$('.news-header-bitcoin-price span.daily-low').html('LOW: ' + low.formatMoney(0, '.', ',') + '円');
 	            	}
-	            	if (!isNaN(change))
+	            	if (!isNaN(change) && false)
 	            	{
 	            		if (change > 0)
 	            		{
