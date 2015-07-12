@@ -107,7 +107,7 @@ en:
     nonprofit: "Non-profit organizations"
     wikiportal: "Visit the <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Community portal</a> on the wiki."
   choose-your-wallet:
-    title: "Choose your wallet - Bitcoin"
+    title: "Bitcoin.com - Choose your bitcoin wallet"
     pagetitle: "Choose your Bitcoin wallet"
     pagedesc: "Find your wallet and start making payments with merchants and users."
     walletcatmobile: "Mobile"
@@ -433,7 +433,7 @@ en:
     readmore: "Learning more"
     readmoretxt: "This was only the briefest of introductions to how Bitcoin works. You can <a href=\"#bitcoin-paper#\">read the original paper</a> that describes the system's design, read the <a href=\"/en/developer-documentation\">developer documentation</a>, participate in the <a href=\"https://bitcointalk.org/\">forums</a>, or on <a href=\"https://reddit.com/r/bitcoin\">Reddit</a>."
   index:
-    title: "Bitcoin - Open source P2P money"
+    title: "Bitcoin.com - Buy Bitcoins, create wallets, news and more"
     metadescription: "Bitcoin is the most important invention in the history of the world, since the internet itself."
     listintro: "Bitcoin is the most important invention in the history of the world,<br>since the internet itself."
     list1: "Instant peer-to-peer<br>transactions"
@@ -809,7 +809,7 @@ en:
       help: help
       morehelp: more-help
   buy-bitcoins:
-    title: "Buy Bitcoins"
+    title: "Bitcoin.com - Buy Bitcoins"
     pagetitle: "Buy Bitcoins"
     multi-select-title: "Verified Bitcoin Exchanges"
     stats-exchanges-text: "exchanges"
@@ -828,11 +828,15 @@ en:
     regionME: "Middle East"
     regionAS: "Asia"
   bitcoin-news:
-    news-title: "News"
+    news-title: "Bitcoin.com - Buy Bitcoins, create wallets, news and more"
     pagetitle: "Daily Bitcoin News"
-    title: "Daily Bitcoin News"
+    title: "Bitcoin.com - Daily Bitcoin News"
   bitcoin-news-article:
     news-title: "News"
+    title: "Bitcoin.com - Daily Bitcoin News"
+  bitcoin-news-search:
+    news-title: "News"
+    title: "Bitcoin.com - Daily Bitcoin News"
   mine-bitcoins:
     title: "Mine Bitcoins"
     pagetitle: "Mine Bitcoins"
