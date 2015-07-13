@@ -71,6 +71,8 @@ $(document).ready(function(){
 		}
 	}, 500);
 	
+	var yesterdaysPriceUSD = -1;
+	
 	$.ajax({
 	    url: "/api/ticker/30dayUSD",
 	    type: "GET",
@@ -81,6 +83,7 @@ $(document).ready(function(){
 	            	console.log(response);
 	            	
 	            	var graphData = [];
+	            	yesterdaysPriceUSD = response.data[response.data.length-1][1];
 	            	
 	            	for (var i=response.data.length-1; i>=0; i--)
 	            	{
