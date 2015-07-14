@@ -401,8 +401,19 @@ margin: 0px 5px 5px 0px;
 .secondary-story {
 	height: 200px;
 	overflow: hidden;
-	width: 49.5%;
 	margin-top: 3px;
+}
+
+@media screen and (max-width:361px) {
+	.secondary-story {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:362px) {
+	.secondary-story {
+		width: 49.5%;
+	}
 }
 
 .pure-u-1 .pure-u-md-1-3 .secondary-story img {
