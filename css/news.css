@@ -98,6 +98,7 @@ display:none;
 .news-tertiary .tertiary-story img {
 	float:left;
 	margin:10px 10px 0px 0px;
+	width: 150px;
 }
 
 .news-tertiary .tertiary-story .headline {
@@ -205,6 +206,7 @@ padding-left:15px;
 .news-tertiary .tertiary-story img {
 float:left;
 margin:0px 10px 20px 0px;
+width: 260px;
 }
 
 .news-tertiary .tertiary-story .headline {
@@ -330,6 +332,14 @@ position:relative;
 
 .news-featured .latest-stories {
 
+}
+
+@media screen and (min-width:769px) {
+
+	div.latest-stories {
+  		overflow: hidden;
+  		height: 313px;
+	}
 }
 
 .news-featured .latest-stories .header {
@@ -460,6 +470,18 @@ opacity: 0;
 @media screen and (max-width:768px) {
 	#searchbox {
 		top: 60px;
+	}
+	
+	div.latest-stories {
+  		height: auto;
+  		overflow-y: auto;
+	}
+	
+	div.figcaptionsmall {
+		  position: absolute;
+		  background-color: rgba(0,0,0,.7);
+		  width: 200px;
+		  color: #FFF;
 	}
 }
 
