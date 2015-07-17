@@ -149,8 +149,10 @@ function getArticle(articleId) {
 	            	document.title = response.title;
 	            	
 	            	// <meta property="og:title"    	content="Workday Sets Price Range for I.P.O." />
-	            	$('head').append($('<meta property="og:title" content="' + response.title + '" />'));
-	            	$('head').append($('<meta property="og:image" content="' + imgUrl + '" />'));
+					$("meta[property='og\\:title']").remove();
+					$('head').append($('<meta property="og:title" content="' + response.title + '" />'));
+					$("meta[property='og\\:image']").remove();
+					$('head').append($('<meta property="og:image" content="' + imgUrl + '" />'));
 	            	
 	            	$('#article-timestamp span').eq(0).html(prettyDate(response.published));
 	            	$('#article-timestamp span').eq(1).html(prettyDate(response.updated));
