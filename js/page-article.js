@@ -150,6 +150,7 @@ function getArticle(articleId) {
 	            	
 	            	// <meta property="og:title"    	content="Workday Sets Price Range for I.P.O." />
 	            	$('head').append($('<meta property="og:title" content="' + response.title + '" />'));
+	            	$('head').append($('<meta property="og:image" content="' + imgUrl + '" />'));
 	            	
 	            	$('#article-timestamp span').eq(0).html(prettyDate(response.published));
 	            	$('#article-timestamp span').eq(1).html(prettyDate(response.updated));
