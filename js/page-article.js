@@ -161,9 +161,9 @@ function getArticle(articleId) {
 					$("meta[property='twitter\\:card']").remove();
 					$('head').append($('<meta property="twitter:card">').attr('content', 'summary_large_image'));
 					$("meta[property='twitter\\:site']").remove();
-					$('head').append($('<meta property="twitter:site">').attr('content', '@BTCTW'));
+					$('head').append($('<meta property="twitter:site">').attr('content', '@BTCTN'));
 					$("meta[property='twitter\\:creator']").remove();
-					$('head').append($('<meta property="twitter:creator">').attr('content', '@BTCTW'));
+					$('head').append($('<meta property="twitter:creator">').attr('content', '@BTCTN'));
 					$("meta[property='twitter\\:title']").remove();
 					$('head').append($('<meta property="twitter:title">').attr('content', response.title));
 					$("meta[property='twitter\\:description']").remove();
