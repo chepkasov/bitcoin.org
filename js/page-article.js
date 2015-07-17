@@ -148,13 +148,28 @@ function getArticle(articleId) {
 	            	
 	            	document.title = response.title;
 	            	
-	            	// <meta property="og:title"    	content="Workday Sets Price Range for I.P.O." />
+					$("meta[name='description']").remove();
+					$('head').append($('<meta name="description">').attr('content', $(content).find('div#brief').first().text()));
+
 					$("meta[property='og\\:title']").remove();
 					$('head').append($('<meta property="og:title">').attr('content', response.title));
 					$("meta[property='og\\:description']").remove();
 					$('head').append($('<meta property="og:description">').attr('content', $(content).find('div#brief').first().text()));
 					$("meta[property='og\\:image']").remove();
 					$('head').append($('<meta property="og:image">').attr('content', imgUrl));
+
+					$("meta[property='twitter\\:card']").remove();
+					$('head').append($('<meta property="twitter:card">').attr('content', 'summary_large_image'));
+					$("meta[property='twitter\\:site']").remove();
+					$('head').append($('<meta property="twitter:site">').attr('content', '@BTCTW'));
+					$("meta[property='twitter\\:creator']").remove();
+					$('head').append($('<meta property="twitter:creator">').attr('content', '@BTCTW'));
+					$("meta[property='twitter\\:title']").remove();
+					$('head').append($('<meta property="twitter:title">').attr('content', response.title));
+					$("meta[property='twitter\\:description']").remove();
+					$('head').append($('<meta property="twitter:description">').attr('content', $(content).find('div#brief').first().text()));
+					$("meta[property='twitter\\:image']").remove();
+					$('head').append($('<meta property="twitter:image">').attr('content', imgUrl));
 	            	
 	            	$('#article-timestamp span').eq(0).html(prettyDate(response.published));
 	            	$('#article-timestamp span').eq(1).html(prettyDate(response.updated));
