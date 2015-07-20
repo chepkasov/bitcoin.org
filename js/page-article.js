@@ -14,6 +14,12 @@ $(document).ready(function(){
 	
 	articleId = document.URL.substr(document.URL.lastIndexOf('/')+1);
 	
+	if (document.URL.indexOf('?')  > -1)
+	{
+		console.log(document.URL.substr(0,document.URL.indexOf('?')));
+		window.location = document.URL.substr(0,document.URL.indexOf('?'));
+	}
+	
 	if (articleId != null)
 	{
 		getArticle(articleId);
@@ -224,13 +230,37 @@ function getArticle(articleId) {
 	        	  }
 
 	        	  // Load comments
+	        	  /* * * CONFIGURATION VARIABLES: THIS CODE IS ONLY AN EXAMPLE * * */
 	        	  var disqus_shortname = 'bitcoincom';
+	        	  var disqus_identifier;
+	        	  
+	        	  console.log(articleId.substring(12));
+	      	      if (parseInt(articleId.substring(12)) > 1959060)
+	      	      {
+	      	    	  disqus_identifier = articleId;
+	      	      }
+	        	  
+	        	  var disqus_url = document.URL.substr(0, articleId.indexOf('?'));
+
+	        	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	        	    (function() {
+	        	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	        	    })();
+	        	  
+	        	  /*
+	        	  var disqus_identifier = articleId;
+	        	  console.log("ID: " + disqus_identifier);
+
 		      	    (function() {
 		      	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 		      	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 		      	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 		      	    })();
 		      	    
+		      	    */
+	        	  
 		      	  // Load FB share button
 		      	  $('.fb-share-button').attr('href', window.location.href);
 		      	  (function(d, s, id) {
