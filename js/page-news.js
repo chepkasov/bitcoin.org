@@ -200,8 +200,14 @@ function listNewsItems(pageToken) {
 		            			$(newTertiaryStory).find('.date').html(prettyDate(response.items[i].published));
 		            			$(newTertiaryStory).find('img').attr('src',imgUrl);
 		            			$(newTertiaryStory).find('a').attr('href','bitcoin-news/' + urlSlug);
-		            			$(newTertiaryStory).find('.description').html($(element).find('div#brief').first().html());
-		            			$(newTertiaryStory).css('display', '');
+		            			var description = $(element).find('div#brief').first().html();
+		            			$(newTertiaryStory).find('.description').html(description);
+		            			if (description === "undefined" || description == null || description == '')
+		            			{
+		            				$(newTertiaryStory).hide();
+		            			} else {
+		            				$(newTertiaryStory).css('display', '');		            				
+		            			}
 		            			
 		            			$('div.news-tertiary').append($(newTertiaryStory));
 	            				
