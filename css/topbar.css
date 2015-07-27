@@ -29,6 +29,7 @@
 	font-family: Ubuntu, sans-serif;
     font-size: 32px;
     color: #FFF;
+    line-height: normal;
 }
 
 .btcom-top-bar ul {
@@ -51,6 +52,10 @@
 	font-size:16px;
 	line-height: 35px;
 	text-decoration:none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.bar-menuright a img {
+		display: inline;
 }
 
 .bar-menuright a:hover {
@@ -80,6 +85,10 @@
 .bar-menuright li {
 	margin: 0;
 }
+
+/* Change this in order to change the Dropdown symbol */
+.bar-menuright li > a:after { content:  ' +'; }
+.bar-menuright li > a:only-child:after { content: ''; }
 
 /* Display Dropdowns on Hover */
 .btcom-top-bar ul li:hover > ul {
