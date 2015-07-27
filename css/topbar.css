@@ -54,8 +54,8 @@
 	text-decoration:none;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.bar-menuright a img {
-		display: inline;
+.bar-logoleft a img {
+	display: inline;
 }
 
 .bar-menuright a:hover {
@@ -140,5 +140,8 @@
 	.btcom-top-bar div.bar-menuright {
    		width: 100%;
     	background-color: #444;
+	}
+	.bar-menuright a {
+		padding:0 5px;
 	}
 }
