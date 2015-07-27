@@ -993,6 +993,7 @@ wallets:
         screenshot: "luxstack.png"
         os:
         - android
+        - ios
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationservers"
@@ -1009,6 +1010,22 @@ wallets:
         screenshot: "luxstack.png"
         os:
         - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationservers"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletluxstack"
+        link: "https://itunes.apple.com/app/luxstack-for-bitcoin/id646486715"
+        screenshot: "luxstack.png"
+        os:
+        - ios
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationservers"
