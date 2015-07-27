@@ -1,0 +1,135 @@
+.btcom-top-bar {
+	margin: 0px;
+	padding: 0px;
+	background-color: #444;
+	height: 60px;	
+}  
+
+/* Center menu items */
+
+.btcom-top-bar div.bar-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btcom-top-bar div.bar-logoleft {
+	width: 230px;
+    float: left;
+}
+
+.btcom-top-bar div.bar-menuright {
+    float: left;
+    text-align: right;
+}
+
+.btcom-top-bar span.bar-logo-text {
+	position: absolute;
+	top: 13px;
+	margin-left: 5px;
+	font-family: Ubuntu, sans-serif;
+    font-size: 32px;
+    color: #FFF;
+}
+
+.btcom-top-bar ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	margin-top: 13px;
+}
+
+.btcom-top-bar ul li {
+	display:inline-block;
+	background-color: #444;
+}
+
+.bar-menuright a {
+	display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:16px;
+	line-height: 35px;
+	text-decoration:none;
+}
+
+.bar-menuright a:hover {
+	background-color: #000000;
+}
+
+/* Hide Dropdowns by Default */
+.btcom-top-bar ul ul {
+	display: none;
+	position: absolute;
+	top: 34px;
+  	z-index: 500;
+}
+
+.bar-menuright a:visited,
+.bar-menuright a:active,
+.bar-menuright a:link {
+	color: #FFFFFF;
+}
+
+.bar-menuright a:visited:hover,
+.bar-menuright a:active:hover,
+.bar-menuright a:link:hover {
+	color: #C7C7C7;
+}
+
+.bar-menuright li {
+	margin: 0;
+}
+
+/* Display Dropdowns on Hover */
+.btcom-top-bar ul li:hover > ul {
+	display:inherit;
+}
+
+/* Display Dropdowns on Hover */
+.btcom-top-bar ul li ul {
+	margin-top: 0px;
+}
+
+/* Fisrt Tier Dropdown */
+.btcom-top-bar ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+.btcom-top-bar ul ul li {
+		left:-170px;
+	}
+
+@media screen and (min-width:768px) {
+	
+}
+
+@media screen and (max-width:930px) {
+	.btcom-top-bar div.bar-center {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:931px) {
+	.btcom-top-bar div.bar-center {
+		width: 930px;
+	}
+}
+
+@media screen and (min-width:620px) {
+	.btcom-top-bar div.bar-menuright {
+    	width: calc(100% - 230px);
+	}
+}
+@media screen and (max-width:619px) {
+	.btcom-top-bar ul {
+		margin-top: 0px;
+	}
+	.btcom-top-bar div.bar-menuright {
+   		width: 100%;
+    	background-color: #444;
+	}
+}

@@ -47,47 +47,40 @@
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
 <link rel="stylesheet" href="/css/front.css" type="text/css" media="screen" />
-
+<link rel="stylesheet" href="/css/topbar.css" type="text/css" media="screen" />
 
 </head>
 
 <body {% if page.id == 'buy-bitcoins' %} ng-app="buyBitcoins" {% endif %}>
 
-<div class="pure-g topmenu">
+<div class="btcom-top-bar">
 
-	<div class="pure-u-8-24 left" style="margin-left: auto;">
-  		<nav style="font-size: 32px; text-align: left; vertical-align: middle; color: #FFFFFF; display: table-cell;">
-  			<a href="/en/" style="  font-size: inherit; background-color: inherit;">
-    			<img src="/img/templogo2.png" style="margin-top: 5px; ">
-    			<span style="position: absolute; top: 13px; margin-left: 55px;">Bitcoin.com</span>
-    		</a>
-    	</nav>
+	<div class="bar-center">
+			<div class="bar-logoleft">
+				<a href="/en/" style="  font-size: inherit; background-color: inherit;">
+    				<img src="/img/templogo2.png" style="margin-top: 5px; ">
+    				<span class="bar-logo-text">Bitcoin.com</span>
+    			</a>
+			</div>
+			<div class="bar-menuright">
+				<ul>
+		        	<li><a href="/en/buy-bitcoins">Buy Bitcoins</a></li>
+		        	<li><a href="/en/choose-your-wallet">Wallets</a></li>
+		        	<li><a href="/en/bitcoin-news">News</a></li>
+		            <li><a href="#">Learn more</a>
+		            <ul>
+		            	<li><a href="/en/getting-started">Getting started</a></li>
+		                <li><a href="/en/how-it-works">How it Works</a></li>
+		                <li><a href="/en/you-need-to-know">You Need to Know</a></li>
+		                <li><a href="/en/faq">FAQ</a></li>
+		            </ul>
+		            </li>
+		        </ul>
+			</div>
   </div>
   
-  <div class="pure-u-8-24 right" style="margin-right: auto;">
-    <!-- nav -->
-    <nav style="margin-top: 14px;">
-        <ul>
-        	<li><a href="/en/buy-bitcoins">Buy Bitcoins</a></li>
-        	<li><a href="/en/choose-your-wallet">Wallets</a></li>
-        	<li><a href="/en/bitcoin-news">News</a></li>
-            <li><a href="#">Learn more</a>
-            <ul>
-            	<li><a href="/en/getting-started">Getting started</a></li>
-                <li><a href="/en/how-it-works">How it Works</a></li>
-                <li><a href="/en/you-need-to-know">You Need to Know</a></li>
-                <li><a href="/en/faq">FAQ</a></li>
-            </ul>
-            </li>
-        </ul>
-    </nav>
-
-  </div>
+  
 </div>
-
-
-
-
 
 <div class="pure-g">
   <div class="pure-u-1">
