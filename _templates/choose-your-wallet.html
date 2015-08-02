@@ -31,6 +31,31 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- bitcoinxt:
+    title: "Bitcoin XT"
+    titleshort: "Bitcoin<br>XT"
+    compat: "desktop windows mac linux"
+    level: 1
+    platform:
+      desktop:
+        text: "walletbitcoinxt"
+        link: "https://github.com/bitcoinxt/bitcoinxt"
+        source: "https://github.com/bitcoinxt/bitcoinxt"
+        screenshot: "bitcoinxt.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkgoodvalidationfullnode"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - multibit:
     title: "MultiBit"
     titleshort: "MultiBit"
