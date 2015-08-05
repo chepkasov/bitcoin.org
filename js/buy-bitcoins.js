@@ -47,6 +47,22 @@ $(document).ready(function(){
 	            	{
 	            		$('.exchange-listing').hide();
 						var sponsoredId = '#listing-' + response.promotedCampaigns[0].tagname;
+						
+						var hasBitstampEUR = false;
+						
+						for (var j=0; j<response.localListings.length; j++)
+						{
+							if (response.localListings[j].id == "BitstampEUR")
+							{
+								hasBitstampEUR = true;
+							}
+						}
+						
+						if (hasBitstampEUR == true)
+						{
+							sponsoredId = '#listing-BitstampEUR'; // Override default
+						}
+						
 	            		var listCont = $('#exchange-listing-container').width();
 	            		var marginLeft = (listCont - 408)/2;
 	            		if (marginLeft < 0)
@@ -351,6 +367,22 @@ app.controller('exchangeTreeviewCtrl',function($scope, LocalData, $http) {
 	            	{
 	            		$('.exchange-listing').hide();
 						var sponsoredId = '#listing-' + response.promotedCampaigns[0].tagname;
+						
+						var hasBitstampEUR = false;
+						
+						for (var j=0; j<response.localListings.length; j++)
+						{
+							if (response.localListings[j].id == "BitstampEUR")
+							{
+								hasBitstampEUR = true;
+							}
+						}
+						
+						if (hasBitstampEUR == true)
+						{
+							sponsoredId = '#listing-BitstampEUR'; // Override default
+						}
+						
 	            		var listCont = $('#exchange-listing-container').width();
 	            		var marginLeft = (listCont - 408)/2;
 	            		if (marginLeft < 0)
@@ -445,6 +477,22 @@ function listExchanges(countryCode) {
 	            	{
 	            		$('.exchange-listing').hide();
 						var sponsoredId = '#listing-' + response.promotedCampaigns[0].tagname;
+						
+						var hasBitstampEUR = false;
+						
+						for (var j=0; j<response.localListings.length; j++)
+						{
+							if (response.localListings[j].id == "BitstampEUR")
+							{
+								hasBitstampEUR = true;
+							}
+						}
+						
+						if (hasBitstampEUR == true)
+						{
+							sponsoredId = '#listing-BitstampEUR'; // Override default
+						}
+						
 	            		var listCont = $('#exchange-listing-container').width();
 	            		var marginLeft = (listCont - 408)/2;
 	            		if (marginLeft < 0)
